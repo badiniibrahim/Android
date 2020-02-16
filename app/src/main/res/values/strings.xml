@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie</string>
+    <string name="internet_avaible_message">Assurez-vous d\'avoir une connexion de données active</string>
+    <string name="date_de_sortie">Date de sortie : </string>
+    <string name="evaluation">Évaluation : </string>
+    <string name="runtime">Durée : </string>
+    <string name="revenue">Revenu : </string>
+    <string name="overview">Aperçu</string>
+    <string name="infos_sur_le_film">Infos sur le film</string>
+    <string name="recherche">Recherche</string>
+    <string name="app_label">Retrouver un film</string>
+    <string name="search_hint">Sonic</string>
+    <string name="favoris_non_selectionner">Favoris non selectionner</string>
+    <string name="failed_message">Erreur lors de l\'insertion dans la liste de favoris</string>
+    <string name="success_message">Le film a bien été sauvegardé dans la liste des favoris</string>
+    <string name="photo_du_film">Photo du film</string>
+    <string name="favoris_title">Mes favoris</string>
+
+</resources>

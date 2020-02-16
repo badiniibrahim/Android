@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="favorisItemViewModel"
+            type="com.badini.movie.ui.favoris.FavorisItemViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{favorisItemViewModel.poster}"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/photo_du_film" />
+
+            <TextView
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/title"
+                android:layout_marginStart="15dp"
+                android:text="@{favorisItemViewModel.title}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:id="@+id/release_date"
+                android:layout_marginStart="15dp"
+                android:text="@{favorisItemViewModel.releasedate}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
