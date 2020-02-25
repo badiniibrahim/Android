@@ -1,6 +1,5 @@
 package com.badini.movie.ui.favoris
 
-import android.util.Log
 import androidx.databinding.ObservableField
 import com.badini.movie.data.model.db.Favoris
 

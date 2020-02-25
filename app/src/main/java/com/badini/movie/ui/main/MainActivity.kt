@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), MainNavigator, KodeinAware {
         val animation: LayoutAnimationController =
             AnimationUtils.loadLayoutAnimation(this, resId)
         movieRecyclerView.setLayoutAnimation(animation)
-        movieRecyclerView.layoutManager = GridLayoutManager(this,3)
+        movieRecyclerView.layoutManager = GridLayoutManager(this,2)
         movieRecyclerView.setHasFixedSize(true)
         movieRecyclerView.adapter = moviePageListAdapter
     }

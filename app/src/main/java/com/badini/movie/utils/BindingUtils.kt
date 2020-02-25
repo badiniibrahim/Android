@@ -1,14 +1,10 @@
 package com.badini.movie.utils
 
-import android.util.Log
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
-import androidx.paging.PagedList
 import androidx.recyclerview.widget.RecyclerView
-import com.badini.movie.data.model.api.Movie
 import com.badini.movie.data.model.db.Favoris
 import com.badini.movie.ui.favoris.FavorisAdapter
-import com.badini.movie.ui.main.MoviePageListAdapter
 import com.bumptech.glide.Glide
 
 class BindingUtils {
@@ -26,13 +22,6 @@ class BindingUtils {
             Glide.with(context)
                 .load(moviePosterURL)
                 .into(imageView);
-        }
-
-        @JvmStatic
-        @BindingAdapter("movie")
-        fun bindRecyclerView(recyclerView: RecyclerView, data: PagedList<Movie>?){
-            val adapter = recyclerView.adapter as MoviePageListAdapter
-            adapter.submitList(data)
         }
 
         @JvmStatic

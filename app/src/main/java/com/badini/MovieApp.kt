@@ -36,19 +36,6 @@ class MovieApp: Application(), KodeinAware {
         bind() from singleton { MovieDataSourceRepository(instance()) }
         bind() from provider  { MovieDetailsViewModelFactory(instance()) }
         bind() from provider { FavorisViewModelFactory(instance()) }
-
-
-        /*bind() from singleton { AppDatabase(instance()) }
-        bind() from singleton { AccountRepository(instance(), instance())}
-        bind() from singleton { SearchRepository(instance(), instance())}
-        bind() from singleton { PreferenceProvider(instance()) }
-        bind() from singleton { AuthRepository(instance(), instance(), instance()) }
-        bind() from singleton { WelcomeRepository(instance()) }
-
-        bind() from singleton { WelcomeViewModelFactory(instance()) }
-        bind() from provider { AuthViewModelFactory(instance()) }
-        bind() from provider { AccountViewModelFactory(instance()) }
-        bind() from provider { SearchViewModelFactory(instance()) }*/
-
+        
     }
 }

@@ -2,8 +2,6 @@ package com.badini.movie.ui.main
 
 import androidx.databinding.ObservableField
 import com.badini.movie.data.model.api.Movie
-import com.badini.movie.utils.Constante
-import com.bumptech.glide.Glide
 
 class MovieItemViewModel(
     private val movie: Movie,
@@ -19,11 +17,6 @@ class MovieItemViewModel(
         this.mListener = listener
         title = ObservableField(movie.title)
         releaseDate = ObservableField(movie.releaseDate)
-
-        /*val moviePosterURL = Constante.POSTER_BASE_URL + it.posterPath
-        Glide.with(this)
-            .load(moviePosterURL)
-            .into(activityMovieDetailBinding!!.ivMoviePoster);*/
 
     }
 

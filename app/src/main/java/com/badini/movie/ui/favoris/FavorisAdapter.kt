@@ -20,11 +20,7 @@ class FavorisAdapter: RecyclerView.Adapter<BaseViewHolder>(){
     }
 
     override fun getItemCount(): Int {
-        return if (favorisList.size > 0) {
-            favorisList.size
-        } else {
-            1
-        }
+        return favorisList.size
     }
 
     fun update(items: List<Favoris>) {
