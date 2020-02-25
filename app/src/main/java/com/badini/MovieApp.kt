@@ -36,6 +36,6 @@ class MovieApp: Application(), KodeinAware {
         bind() from singleton { MovieDataSourceRepository(instance()) }
         bind() from provider  { MovieDetailsViewModelFactory(instance()) }
         bind() from provider { FavorisViewModelFactory(instance()) }
-        
+
     }
 }
